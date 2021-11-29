@@ -1,0 +1,2 @@
+rootProject.name = "mango_contents"
+include ':app'

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="#8977AD"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="인생은 주사위"
+                android:textSize="30sp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:layout_marginTop="100dp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/leftside_dice"
+                android:src="@drawable/dice_1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:id="@+id/rightside_dice"
+                android:src="@drawable/dice_1"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/startButton"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:height="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="인생 고고"
+            android:layout_margin="50dp"/>
+
+
+    </LinearLayout>
+
+</layout>

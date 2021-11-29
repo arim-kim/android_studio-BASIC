@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/trot_nav"
+    app:startDestination="@id/gainFragment">
+
+    <fragment
+        android:id="@+id/gainFragment"
+        android:name="com.arim.trotapplication.GainFragment"
+        android:label="fragment_gain"
+        tools:layout="@layout/fragment_gain" >
+        <action
+            android:id="@+id/action_gainFragment_to_youngongFragment"
+            app:destination="@id/youngongFragment" />
+        <action
+            android:id="@+id/action_gainFragment_to_youngtakFragment"
+            app:destination="@id/youngtakFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/youngongFragment"
+        android:name="com.arim.trotapplication.YoungongFragment"
+        android:label="fragment_youngong"
+        tools:layout="@layout/fragment_youngong" >
+        <action
+            android:id="@+id/action_youngongFragment_to_gainFragment"
+            app:destination="@id/gainFragment" />
+        <action
+            android:id="@+id/action_youngongFragment_to_youngtakFragment"
+            app:destination="@id/youngtakFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/youngtakFragment"
+        android:name="com.arim.trotapplication.YoungtakFragment"
+        android:label="fragment_youngtak"
+        tools:layout="@layout/fragment_youngtak" >
+        <action
+            android:id="@+id/action_youngtakFragment_to_youngongFragment"
+            app:destination="@id/youngongFragment" />
+        <action
+            android:id="@+id/action_youngtakFragment_to_gainFragment"
+            app:destination="@id/gainFragment" />
+    </fragment>
+</navigation>
