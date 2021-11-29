@@ -1,4 +1,7 @@
 # android_studio-BASIC
+
+안드로이드 앱 개발 
+사용언어 : Kotlin
 수강 강의 : 강의를 변형하며 학습 
 https://www.inflearn.com/course/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C-%EC%BD%94%ED%8B%80%EB%A6%B0-%EB%AA%A8%EB%B0%94%EC%9D%BC%EC%95%B1/dashboard 
 
